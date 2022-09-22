@@ -1,0 +1,136 @@
+a {
+  color: aqua;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
+
+header {
+  border-bottom: 1px solid aqua;
+}
+
+nav h1 {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.wrap-link {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link a:hover {
+  color: rgb(4, 199, 199);
+}
+
+.message {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5rem 1rem;
+  border-radius: 10px;
+  color: rgb(50, 244, 179);
+}
+
+.cross {
+  display: none;
+}
+
+.button {
+  color: aqua;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+}
+
+.button:hover {
+  color: rgb(4, 199, 199);
+}
+
+.ham {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .wrap-link {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    text-align: end;
+    padding: 8rem 0;
+    padding-bottom: 14rem;
+  }
+
+  .cross {
+    display: block;
+    color: aqua;
+  }
+
+  .cross-bar {
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    color: black;
+    font-size: 1.25rem;
+    border: none;
+  }
+
+  .cool {
+    display: flex;
+  }
+
+  .fact {
+    display: none;
+  }
+
+  .wrap-link a {
+    color: black;
+  }
+
+  .ham {
+    display: block;
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .message {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  nav {
+    padding: 2rem 1rem;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+}
